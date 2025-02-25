@@ -1,0 +1,14 @@
+name = "astroship"
+type = "javascript"
+
+[build]
+command = "npm run build"
+cwd = "./"
+
+[env.production]
+workers_dev = false
+route = "https://7ymphony.com/*"  # Replace with your production domain
+
+[env.staging]
+workers_dev = true
+route = "https://astroship.7ymphony7.workers.dev/*"  # Replace with your staging domain
