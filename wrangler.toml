@@ -4,11 +4,12 @@ type = "javascript"
 [build]
 command = "npm run build"
 cwd = "./"
+main = "dist/index.js"  # This is the entry point, replace if needed.
 
 [env.production]
 workers_dev = false
-route = "https://7ymphony.com/*"  # Replace with your production domain
+route = "https://7ymphony.com/*"  # Your production domain.
 
 [env.staging]
 workers_dev = true
-route = "https://astroship.7ymphony7.workers.dev/*"  # Replace with your staging domain
+route = "https://astroship.7ymphony7.workers.dev/*"  # Your staging domain.
